@@ -1,16 +1,13 @@
 import "./App.css";
-import { useTranslation } from "react-i18next";
-
-import { Button } from "./components/ui/button";
-
+import i18n from "i18next"
 import Header from "./components/Header";
 
 function App() {
-  const { t } = useTranslation();
 
   return (
     <>
       <Header />
+      {i18n.language}
     </>
   );
 }
