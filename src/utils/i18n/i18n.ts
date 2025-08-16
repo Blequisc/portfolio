@@ -4,6 +4,8 @@ import { initReactI18next } from 'react-i18next';
 import enLang from './locales/en/en.json';
 import ptBRLang from './locales/pt-BR/pt-BR.json';
 
+const LangValue = "en";
+
 i18n
   .use(initReactI18next)
   .init({
@@ -15,10 +17,12 @@ i18n
         translation: ptBRLang,
       },
     },
-    lng: 'pt-BR', // default language
+    lng: LangValue, // default language
     fallbackLng: 'en', // fallback language, in case default language doesn't work
     debug: true,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },
   });
+
+  export default LangValue;

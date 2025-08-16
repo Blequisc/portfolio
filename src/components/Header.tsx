@@ -1,6 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import LangValue from "../utils/i18n/i18n"; // Adjust the import path as necessary
+
 import "flag-icons/css/flag-icons.min.css";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
@@ -16,16 +18,23 @@ const Header: React.FC = () => {
 
           <div>
             {/* //TODO: Add navbar (Github, About, ?) */}
-            Meio
+            {/* Meio */}
+            {LangValue}
           </div>
-
-          <div className="flex items-center justify-between gap-4npx shadcn@latest add "https://magicui.design/r/aurora-text"
-">
+            
+          <div className="flex items-center justify-between gap-4">
             {/*//TODO: Add language and buy me a coffe button */}
+
+
+            <select name="Language" id="">
+              <option value="1"><span className="fi fi-br">br</span></option>
+              <option value="2"><span className="fi fi-us"></span></option>
+              <option value="3">3</option>
+            </select>
 
             <button className="flex items-center justify-center bg-[#c8c8c8] rounded-lg p-2">
               {/* //TODO: Add current language to display, list possible languages (En, Pt-BR) */}
-                <span className="fi fi-br"></span>
+              <span className="fi fi-br"></span>
               <ChevronDownIcon className="h-5" />
             </button>
 
