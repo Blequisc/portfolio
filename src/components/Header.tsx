@@ -19,7 +19,8 @@ const Header: React.FC = () => {
             Meio
           </div>
 
-          <div className="flex items-center justify-between gap-4">
+          <div className="flex items-center justify-between gap-4npx shadcn@latest add "https://magicui.design/r/aurora-text"
+">
             {/*//TODO: Add language and buy me a coffe button */}
 
             <button className="flex items-center justify-center bg-[#c8c8c8] rounded-lg p-2">
