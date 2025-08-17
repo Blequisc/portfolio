@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <header className="bg-[#f2f2f2] h-15 rounded border-1 border-[#c8c8c8] sticky">
+      <header className="bg-[#f2f2f2] h-15 rounded border-1 border-[#c8c8c8] sticky z-100">
         <div className="h-full flex justify-between items-center px-4">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
