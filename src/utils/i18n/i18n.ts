@@ -20,7 +20,7 @@ i18n
     },
     // lng: "pt-BR", // default language
     fallbackLng: 'en', // fallback language, in case default language doesn't work
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },

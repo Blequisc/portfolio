@@ -1,5 +1,7 @@
 {
     "langInPort": "Inglês",
-    "helloWorld": "Hello World!"
-
+    "helloWorld": "Hello World!",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
 }
