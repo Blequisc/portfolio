@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <header className="bg-[#dfdfdf] h-15 rounded-lg border-1 border-[#c8c8c8] ">
+      <header className="bg-[#f2f2f2] h-15 rounded border-1 border-[#c8c8c8] sticky">
         <div className="h-full flex justify-between items-center px-4">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
           </div>
 
           <div className="">
-            {/* //TODO: Add navbar (Github, About, ?) */}
+            {/* // // TODO: Add navbar (Github, About, ?) */}
             {/* Meio */}
             <nav className="flex gap-4">
               <a href="#">{t("about")}</a>
@@ -48,7 +48,29 @@ const Header: React.FC = () => {
             {/* // // TODO: Add current language to display, list possible languages (En, Pt-BR) */}
             {/* Direita */}
             <Select
-              id="LanguageSel"
+              styles={{
+                indicatorSeparator: (styles) => ({
+                  ...styles,
+                  display: "none",
+                }),
+                // make the gap between the flag and the arrow smaller
+                control: (styles) => ({
+                  ...styles,
+                  width: "auto",
+                  border: "none",
+                  boxShadow: "none",
+                  cursor: "pointer",
+                }),
+                dropdownIndicator: (styles) => ({
+                  ...styles,
+                  padding: "4px 4px 4px 0px",
+                }),
+                input: (styles) => ({
+                  ...styles,
+                  padding: "4px 0px 4px 4px",
+                }),
+                
+              }}
               options={options}
               defaultValue={options.find(
                 (option) => option.value === i18n.language
