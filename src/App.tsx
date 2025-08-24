@@ -12,7 +12,7 @@ function App() {
           <Header />
           <br />
 
-          <div className="h-180 w-screen flex justify-center items-center bg-[#160239]">
+          <div className="h-180 w-screen flex justify-center items-center bg-[#1b1b1b]">
             <h1 className="text-9xl font-bold text-center text-white">
               {t("hello")}, <AuroraText>{t("world")}</AuroraText>!
             </h1>
