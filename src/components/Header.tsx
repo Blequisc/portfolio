@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Select from "react-select";
 import i18n from "i18next";
 import { ReactTyped } from "react-typed";
+import { ShimmerButton } from "./magicui/shimmer-button";
 
 import "flag-icons/css/flag-icons.min.css";
 // import { ChevronDownIcon } from "@heroicons/react/24/solid";
@@ -105,7 +106,11 @@ const Header: React.FC = () => {
             />
 
             {/* //TODO: Look for alternates (Image seems to have low quality) */}
-            
+            <ShimmerButton className="shadow-2xl">
+              <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+                Shimmer Button
+              </span>
+            </ShimmerButton>
           </div>
         </div>
       </header>
