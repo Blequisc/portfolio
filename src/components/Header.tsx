@@ -16,8 +16,8 @@ const options = [
 const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div>
-      <header className="bg-[#f2f2f2] h-15 rounded border-1 border-[#c8c8c8] sticky z-100">
+    <div className="">
+      <header className="bg-[#f2f2f2] border-[#c8c8c8] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
         <div className="h-full flex justify-between items-center px-4">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
@@ -49,11 +49,12 @@ const Header: React.FC = () => {
             {/* Direita */}
             <Select
               styles={{
+                // For the divider between arrow and current option
                 indicatorSeparator: (styles) => ({
                   ...styles,
                   display: "none",
                 }),
-                // make the gap between the flag and the arrow smaller
+                // For the main control
                 control: (styles) => ({
                   ...styles,
                   width: "auto",
@@ -61,16 +62,18 @@ const Header: React.FC = () => {
                   boxShadow: "none",
                   cursor: "pointer",
                 }),
+                // For the dropdown arrow
                 dropdownIndicator: (styles) => ({
                   ...styles,
                   padding: "4px 4px 4px 0px",
                 }),
+                // For the current selection
                 input: (styles) => ({
                   ...styles,
                   padding: "4px 0px 4px 4px",
                 }),
-                
               }}
+              //TODO: try to understand what the hell this does (thanks copilot ☺)
               options={options}
               defaultValue={options.find(
                 (option) => option.value === i18n.language
@@ -82,10 +85,10 @@ const Header: React.FC = () => {
               }}
             />
 
+            {/* //TODO: Look for alternates (Image seems to have low quality) */}
             <a href="https://ko-fi.com/Z8Z51JSWBK" target="_blank">
               <img
-                height="36"
-                className="h-9 w-36"
+                className="w-36"
                 src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
                 alt="Buy Me a Coffee at ko-fi.com"
               />

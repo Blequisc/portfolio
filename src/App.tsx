@@ -1,25 +1,26 @@
 import "./App.css";
-import i18n from "i18next";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
+import { AuroraText } from "./components/magicui/aurora-text";
 
 function App() {
   const { t } = useTranslation();
   return (
     <>
-      <div>
-        <motion.div
-          key={i18n.language} // força re-render quando idioma muda
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+      <div className="h-full w-full flex justify-center">
+        
+          {/*  */}
+
           <Header />
-          {i18n.language}
           <br />
-          {t("helloWorld")}
-        </motion.div>
+
+          <div className="h-180 w-screen flex justify-center items-center bg-stone-600">
+            <h1 className="text-9xl font-bold text-center">
+              {t("hello")}, <AuroraText>{t("world")}</AuroraText>!
+            </h1>
+          </div>
+
+          {/*  */}
       </div>
     </>
   );
