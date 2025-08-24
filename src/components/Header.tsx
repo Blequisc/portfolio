@@ -17,8 +17,8 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="">
-      <header className="bg-[#f2f2f2] border-[#c8c8c8] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
-        <div className="h-full flex justify-between items-center px-4">
+      <header className="bg-[#363636] border-[#202020] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
+        <div className="h-full flex justify-between items-center px-4 text-white">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
             // // TODO: Find a lib that has a writing text animation  */}
@@ -61,16 +61,35 @@ const Header: React.FC = () => {
                   border: "none",
                   boxShadow: "none",
                   cursor: "pointer",
+                  backgroundColor: "#202020",
                 }),
                 // For the dropdown arrow
                 dropdownIndicator: (styles) => ({
                   ...styles,
                   padding: "4px 4px 4px 0px",
+                  color: "white",
                 }),
                 // For the current selection
                 input: (styles) => ({
                   ...styles,
                   padding: "4px 0px 4px 4px",
+                }),
+                // Make the list dark and when hovering an option, make it a bit lighter, also remove the highlight on selected option
+                option: (styles, { isFocused, isSelected }) => ({
+                  ...styles,
+                  backgroundColor: isFocused ? "#303030" : "#202020",
+                  color: "white",
+                  cursor: "pointer",
+                  "&:active": {
+                    backgroundColor: "#404040",
+                  },
+                  // Remove highlight on selected option
+                  fontWeight: isSelected ? "normal" : "normal",
+                }),
+                // For the dropdown menu
+                menu: (styles) => ({
+                  ...styles,
+                  backgroundColor: "#202020",
                 }),
               }}
               //TODO: try to understand what the hell this does (thanks copilot ☺)
@@ -86,13 +105,7 @@ const Header: React.FC = () => {
             />
 
             {/* //TODO: Look for alternates (Image seems to have low quality) */}
-            <a href="https://ko-fi.com/Z8Z51JSWBK" target="_blank">
-              <img
-                className="w-36"
-                src="https://storage.ko-fi.com/cdn/kofi3.png?v=6"
-                alt="Buy Me a Coffee at ko-fi.com"
-              />
-            </a>
+            
           </div>
         </div>
       </header>
