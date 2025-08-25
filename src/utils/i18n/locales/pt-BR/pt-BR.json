@@ -5,5 +5,7 @@
     "projects": "Projetos",
     "contact": "Contato",
     "hello": "Olá",
-    "world": "Mundo"
+    "world": "Mundo",
+    "aboutMe": "Sobre Mim",
+    "aboutMeText": "Sou um desenvolvedor apaixonado com experiência na construção de aplicações web usando tecnologias modernas. Adoro criar interfaces de usuário bonitas e funcionais. No meu tempo livre, gosto de aprender novas linguagens de programação e explorar novos frameworks. Sinta-se à vontade para entrar em contato comigo para colaboração ou apenas para dizer oi!"
 }

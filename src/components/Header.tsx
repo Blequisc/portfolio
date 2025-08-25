@@ -62,7 +62,7 @@ const Header: React.FC = () => {
                   border: "none",
                   boxShadow: "none",
                   cursor: "pointer",
-                  backgroundColor: "#202020",
+                  backgroundColor: "rgba(0, 0, 0, 1)",
                 }),
                 // For the dropdown arrow
                 dropdownIndicator: (styles) => ({
@@ -78,11 +78,11 @@ const Header: React.FC = () => {
                 // Make the list dark and when hovering an option, make it a bit lighter, also remove the highlight on selected option
                 option: (styles, { isFocused, isSelected }) => ({
                   ...styles,
-                  backgroundColor: isFocused ? "#303030" : "#202020",
+                  backgroundColor: isFocused ? "#rgba(21, 21, 21, 1)" : "#rgba(0, 0, 0, 1)",
                   color: "white",
                   cursor: "pointer",
                   "&:active": {
-                    backgroundColor: "#404040",
+                    backgroundColor: "rgba(0, 0, 0, 1)",
                   },
                   // Remove highlight on selected option
                   fontWeight: isSelected ? "normal" : "normal",
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 // For the dropdown menu
                 menu: (styles) => ({
                   ...styles,
-                  backgroundColor: "#202020",
+                  backgroundColor: "#rgba(0, 0, 0, 1)",
                 }),
               }}
               //TODO: try to understand what the hell this does (thanks copilot ☺)

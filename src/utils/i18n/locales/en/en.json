@@ -5,5 +5,7 @@
     "projects": "Projects",
     "contact": "Contact",
     "hello": "Hello",
-    "world": "World"
+    "world": "World",
+    "aboutMe": "About Me",
+    "aboutMeText": "I'm a passionate developer with experience in building web applications using modern technologies. I love creating beautiful and functional user interfaces. In my free time, I enjoy learning new programming languages and exploring new frameworks. Feel free to reach out to me for collaboration or just to say hi!"
 }
