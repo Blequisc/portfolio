@@ -7,13 +7,13 @@ function App() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="h-full w-full justify-center flex-col">
+      <div className="h-full w-full justify-center flex-col overflow-x-hidden">
         <Header />
 
         <section
-        // https://38.media.tumblr.com/4804740c190d8a0430550a2fc8541409/tumblr_ngk1sj6g8O1r2xv8po1_500.gif
-        // https://i.pinimg.com/originals/72/d3/a3/72d3a32d3a6271e46d0e6bb25aafc5d0.gif
-        
+          // https://38.media.tumblr.com/4804740c190d8a0430550a2fc8541409/tumblr_ngk1sj6g8O1r2xv8po1_500.gif
+          // https://i.pinimg.com/originals/72/d3/a3/72d3a32d3a6271e46d0e6bb25aafc5d0.gif
+
           id="HelloWorld"
           className="h-210 
           w-screen 
@@ -41,7 +41,7 @@ function App() {
 
         <section
           id="About"
-          className="bg-[#121212] h-150 w-screen text-white flex justify-center items-center"
+          className="bg-[#090909] h-150 w-screen text-white flex justify-center items-center"
         >
           <div className="flex gap-10 items-center">
             <div className="flex-col">
@@ -59,7 +59,10 @@ function App() {
           </div>
         </section>
 
-        <section id="Projects"></section>
+        <section
+          id="Projects"
+          className="h-175 bg-[url('https://cdn.wallpapersafari.com/3/99/7cPhMl.jpg')] bg-cover bg-top"
+        ></section>
       </div>
     </>
   );

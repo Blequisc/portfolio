@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="">
-      <header className="bg-[#141414] border-[#101010] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
+      <header className="bg-[#1a1a1a] border-[#101010] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
         <div className="h-full flex justify-between items-center px-4 text-white">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
@@ -59,10 +59,10 @@ const Header: React.FC = () => {
                 control: (styles) => ({
                   ...styles,
                   width: "auto",
-                  border: "none",
+                  border: "solid 2px #fff",
                   boxShadow: "none",
                   cursor: "pointer",
-                  backgroundColor: "rgba(0, 0, 0, 1)",
+                  backgroundColor: "#",                  
                 }),
                 // For the dropdown arrow
                 dropdownIndicator: (styles) => ({
