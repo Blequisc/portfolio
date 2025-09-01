@@ -18,7 +18,7 @@ const Header: React.FC = () => {
   const { t } = useTranslation();
   return (
     <div className="">
-      <header className="bg-[#363636] border-[#202020] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
+      <header className="bg-[#141414] border-[#101010] rounded border-1 fixed z-100 h-15 w-7xl m-4 top-0 left-0 right-0 mx-auto">
         <div className="h-full flex justify-between items-center px-4 text-white">
           <div className="w-xs flex align-left">
             {/* // // TODO: Add "Gustavo" as in a logo; Maybe make it write itself, then delete and write "Bléqui", delete again and repeat
@@ -38,10 +38,10 @@ const Header: React.FC = () => {
           <div className="">
             {/* // // TODO: Add navbar (Github, About, ?) */}
             {/* Meio */}
-            <nav className="flex gap-4">
-              <a href="#">{t("about")}</a>
-              <a href="#">{t("projects")}</a>
-              <a href="#">{t("contact")}</a>
+            <nav className="flex gap-4 text-lg">
+              <a href="#About">{t("about")}</a>
+              <a href="#Projects">{t("projects")}</a>
+              <a href="#Contact">{t("contact")}</a>
             </nav>
           </div>
 
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
                 // Make the list dark and when hovering an option, make it a bit lighter, also remove the highlight on selected option
                 option: (styles, { isFocused, isSelected }) => ({
                   ...styles,
-                  backgroundColor: isFocused ? "#rgba(21, 21, 21, 1)" : "#rgba(0, 0, 0, 1)",
+                  backgroundColor: isFocused ? "rgba(21, 21, 21, 1)" : "rgba(0, 0, 0, 1)",
                   color: "white",
                   cursor: "pointer",
                   "&:active": {
@@ -90,7 +90,7 @@ const Header: React.FC = () => {
                 // For the dropdown menu
                 menu: (styles) => ({
                   ...styles,
-                  backgroundColor: "#rgba(0, 0, 0, 1)",
+                  backgroundColor: "rgba(0, 0, 0, 1)",
                 }),
               }}
               //TODO: try to understand what the hell this does (thanks copilot ☺)
@@ -106,13 +106,13 @@ const Header: React.FC = () => {
             />
 
             {/* //TODO: Look for alternates (Image seems to have low quality) */}
-            <a href="https://livepix.gg/blequi" target="_blank" rel="noreferrer">
+            {/* <a href="https://livepix.gg/blequi" target="_blank" rel="noreferrer">
               <ShimmerButton className="shadow-2xl">
                 <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
                   livepix.gg/blequi
                 </span>
               </ShimmerButton>
-            </a>
+            </a> */}
           </div>
         </div>
       </header>

@@ -11,12 +11,32 @@ function App() {
         <Header />
 
         <section
+        // https://38.media.tumblr.com/4804740c190d8a0430550a2fc8541409/tumblr_ngk1sj6g8O1r2xv8po1_500.gif
+        // https://i.pinimg.com/originals/72/d3/a3/72d3a32d3a6271e46d0e6bb25aafc5d0.gif
+        
           id="HelloWorld"
-          className="h-180 w-screen flex justify-center items-center bg-[#1b1b1b]"
+          className="h-210 
+          w-screen 
+          flex 
+          justify-center 
+          items-center 
+          bg-[url('https://i.gifer.com/embedded/download/Ao7v.gif')] 
+          bg-black 
+          bg-cover 
+          bg-center 
+          bg-no-repeat"
         >
-          <h1 className="text-9xl font-bold text-center text-white">
-            {t("hello")}, <AuroraText>{t("world")}</AuroraText>!
+          <h1
+            className="text-9xl
+          font-bold
+          text-center
+          text-white
+          text-shadow-[0_0_30px_black]"
+          >
+            {t("hello")},{" "}
+            <AuroraText className="text-shadow-none">{t("world")}</AuroraText>!
           </h1>
+          =
         </section>
 
         <section
@@ -27,9 +47,10 @@ function App() {
             <div className="flex-col">
               <h1 className="text-4xl">{t("aboutMe")}</h1>
               <img
-                src="https://fastly.picsum.photos/id/219/600/800.jpg?hmac=DpHOApCynZkciB0YSmvifdZo-a7UAt8c0oqhV606NWE"
+                // src="https://fastly.picsum.photos/id/219/600/800.jpg?hmac=DpHOApCynZkciB0YSmvifdZo-a7UAt8c0oqhV606NWE"
+                src="https://i.imgur.com/HzdA2UU.png"
                 alt=""
-                className="h-100 w-auto rounded-lg mt-5 mb-5"
+                className="h-100 w-auto rounded-full mt-5 mb-5"
               />
             </div>
             <div className="w-200">
@@ -37,6 +58,8 @@ function App() {
             </div>
           </div>
         </section>
+
+        <section id="Projects"></section>
       </div>
     </>
   );
