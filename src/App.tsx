@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import { useTranslation } from "react-i18next";
 import { AuroraText } from "./components/magicui/aurora-text";
+import { ShineBorder } from "./components/magicui/shine-border";
 
 function App() {
   const { t } = useTranslation();
@@ -41,8 +42,9 @@ function App() {
 
         <section
           id="About"
-          className="bg-[#090909] h-150 w-screen text-white flex justify-center items-center"
+          className="bg-[#090909] h-150 w-screen text-white flex justify-center items-center relative"
         >
+          <ShineBorder shineColor={["#D60270", "#9B4F96", "#0038A8", "#9B4F96"]} />
           <div className="flex gap-10 items-center">
             <div className="flex-col">
               <h1 className="text-4xl">{t("aboutMe")}</h1>
