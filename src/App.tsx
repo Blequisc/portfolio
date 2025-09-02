@@ -8,7 +8,7 @@ function App() {
   const { t } = useTranslation();
   return (
     <>
-      <div className="h-full w-full justify-center flex-col overflow-x-hidden">
+      <div className="h-full w-auto justify-center flex-col overflow-x-hidden">
         <Header />
 
         <section
@@ -42,7 +42,7 @@ function App() {
 
         <section
           id="About"
-          className="bg-[#090909] h-150 w-screen text-white flex justify-center items-center relative"
+          className="bg-[#090909] h-150 w-auto text-white flex justify-center items-center relative"
         >
           <ShineBorder shineColor={["#D60270", "#9B4F96", "#0038A8", "#9B4F96"]} />
           <div className="flex gap-10 items-center">
