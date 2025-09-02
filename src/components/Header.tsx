@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Select from "react-select";
 import i18n from "i18next";
 import { ReactTyped } from "react-typed";
-import { ShimmerButton } from "./magicui/shimmer-button";
+// import { ShimmerButton } from "./magicui/shimmer-button";
 
 import "flag-icons/css/flag-icons.min.css";
 // import { ChevronDownIcon } from "@heroicons/react/24/solid";

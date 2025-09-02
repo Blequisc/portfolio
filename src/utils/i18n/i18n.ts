@@ -18,7 +18,6 @@ i18n
         translation: ptBRLang,
       },
     },
-    // lng: "pt-BR", // default language
     fallbackLng: 'en', // fallback language, in case default language doesn't work
     debug: false,
     interpolation: {
