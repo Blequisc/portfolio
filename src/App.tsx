@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header";
+import ProjectCard from "./components/ProjectCard";
 import { useTranslation } from "react-i18next";
 import { AuroraText } from "./components/magicui/aurora-text";
 import { ShineBorder } from "./components/magicui/shine-border";
@@ -32,7 +33,7 @@ function App() {
           font-bold
           text-center
           text-white
-          text-shadow-[0_0_30px_black]"
+          text-shadow-[0_0_20px_black]"
           >
             {t("hello")},{" "}
             <AuroraText className="text-shadow-none">{t("world")}</AuroraText>!
@@ -44,7 +45,9 @@ function App() {
           id="About"
           className="bg-[#090909] h-150 w-auto text-white flex justify-center items-center relative"
         >
-          <ShineBorder shineColor={["#D60270", "#9B4F96", "#0038A8", "#9B4F96"]} />
+          <ShineBorder
+            shineColor={["#D60270", "#9B4F96", "#0038A8", "#9B4F96"]}
+          />
           <div className="flex gap-10 items-center">
             <div className="flex-col">
               <h1 className="text-4xl">{t("aboutMe")}</h1>
@@ -64,7 +67,19 @@ function App() {
         <section
           id="Projects"
           className="h-175 bg-[url('https://cdn.wallpapersafari.com/3/99/7cPhMl.jpg')] bg-cover bg-top"
-        ></section>
+        >
+          {/* Make the projects card be in a 3 by 2 grid with 50px gap horizontally and 20px gap vertically */}
+            <div
+            className="grid grid-cols-3 justify-items-center items-center h-full"
+            >
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            </div>
+        </section>
       </div>
     </>
   );
